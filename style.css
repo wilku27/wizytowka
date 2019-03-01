@@ -1,0 +1,37 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #999;
+}
+
+.gridwrapper {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 50px 100px 1fr 50px;
+    grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "leftside main rightside"
+    "footer footer footer";
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+.main-container {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
