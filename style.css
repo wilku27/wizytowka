@@ -16,6 +16,7 @@
 
 * {
     box-sizing: border-box;
+    color: black;
 }
 
 :root {
@@ -23,7 +24,7 @@
     --white: #FFF;
     --orange: #ff8000;
     --blue: #0066ff;
-    --pink: #ff0066
+    --pink: #ff0066;
     --lighterblack: #1a1a1a; 
 }
 
@@ -86,6 +87,7 @@ header {
 header h1 {
     display: block;
     border: 2px solid black;
+    /* border-radius: 20%; */
     background-color: hsla(0, 100%, 100%, 0.8);
     line-height: 1.2em;
     padding: 0.2em;
@@ -102,18 +104,40 @@ header h1 {
     margin-bottom: 5%;
 }
 
-.photowrapper {
-
-}
-
 .photowrapper a {
     display: block;
+    position: relative;
 }
 
 .photowrapper img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photowrapper:hover .overlay {
+    opacity: 0.8;
+}
+
+.overlay p {
+    color: white;
 }
 
 footer {
