@@ -63,11 +63,18 @@ nav a {
     display: block;
     margin-left: 3%;
     margin-right: 3%;
+    transition: all 1s ease-in-out;
 }
 
-nav i {
+.icon-nav {
     color: black;
 }
+
+nav a:hover {
+    transform: rotate(360deg);
+}
+
+
 
 header {
     grid-area: header;
