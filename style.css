@@ -88,7 +88,7 @@ header h1 {
     display: block;
     border: 2px solid black;
     /* border-radius: 20%; */
-    background-color: hsla(0, 100%, 100%, 0.8);
+    background-color: hsla(0, 0%, 100%, 0.7);
     line-height: 1.2em;
     padding: 0.2em;
 }
@@ -130,6 +130,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .photowrapper:hover .overlay {
@@ -138,8 +139,27 @@ header h1 {
 
 .overlay p {
     color: white;
+    transition: left 1.5s ease-out;
 }
 
+.overlay .icontemp {
+    position: relative;
+    left: -80%;
+}
+
+.overlay .text {
+    position: relative;
+    left: 80%;
+}
+
+.photowrapper:hover .icontemp {
+    left: 0%;
+}
+
+.photowrapper:hover .text {
+    left: 0%;
+}
+ 
 footer {
     grid-area: footer;
     width: 100%;
