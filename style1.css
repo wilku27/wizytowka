@@ -32,7 +32,7 @@
     --orange: #ff8000;
     --blue: #0066ff;
     --pink: #ff0066;
-    --lighterblack: #1a1a1a; 
+    --lighterblack: #1a1a1a;
 }
 
 body {
@@ -46,10 +46,10 @@ body {
     grid-template-columns: 10% 1fr 10%;
     grid-template-rows: 50px 100px 1fr 50px;
     grid-template-areas:
-    "nav nav nav"
-    "header header header"
-    "leftside main rightside"
-    "footer footer footer";
+        "nav nav nav"
+        "header header header"
+        "leftside main rightside"
+        "footer footer footer";
     justify-items: center;
 }
 
@@ -102,80 +102,10 @@ header h1 {
     line-height: 1.2em;
     padding: 0.2em;
 }
+
 .main-container {
-    grid-area: main;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
 }
 
-.box {
-    margin-top: 4%;
-    margin-bottom: 2%;
-}
-
-.box p {
-    text-align: center;
-}
-
-.photowrapper a {
-    display: block;
-    position: relative;
-}
-
-.photowrapper img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 450px;
-}
-
-.overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-    opacity: 0;
-    transition: opacity 1s ease-in;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.photowrapper:hover .overlay {
-    opacity: 0.8;
-}
-
-.overlay .icon-photo, .text {
-    color: white;
-    transition: left 1s ease-out;
-}
-
-.overlay .icon-photo {
-    position: relative;
-    left: -80%;
-    font-size: 500%;
-}
-
-.overlay .text {
-    position: relative;
-    left: 80%;
-}
-
-.photowrapper:hover .icon-photo {
-    left: 0%;
-}
-
-.photowrapper:hover .text {
-    left: 0%;
-}
- 
 footer {
     grid-area: footer;
     width: 100%;
@@ -185,4 +115,3 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
