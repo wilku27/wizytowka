@@ -104,6 +104,19 @@ header h1 {
 }
 
 .main-container {
+    grid-area: main;
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: block;
+    border: 1px solid black;
+    height: 300px;
 }
 
 footer {
