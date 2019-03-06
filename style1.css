@@ -51,6 +51,7 @@ body {
         "leftside main rightside"
         "footer footer footer";
     justify-items: center;
+    min-height: 100vh;
 }
 
 nav {
@@ -107,16 +108,37 @@ header h1 {
     grid-area: main;
     width: 100%;
     max-width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .box {
-    display: block;
     border: 1px solid black;
-    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box1 {
+    flex-direction: row-reverse;
+}
+
+.emoji {
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer {
