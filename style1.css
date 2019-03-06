@@ -39,6 +39,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Oxygen;
+    overflow-x: hidden;
 }
 
 .gridwrapper {
@@ -140,6 +141,33 @@ header h1 {
     justify-content: center;
     align-items: center;
     font-size: 72px;
+    position: relative;
+}
+
+.oddleft {
+    animation-name: leftroll;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.evenright {
+    animation-name: rightroll;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.two {
+    animation-delay: 1s;
+}
+
+.three {
+    animation-delay: 2s;
+}
+
+.four {
+    animation-delay: 3s;
 }
 
 .text {
@@ -158,4 +186,36 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes leftroll {
+    0% {
+    left: -200%;
+    transform: rotate(-7200deg);
+    }
+
+    50% {
+    left: -100%
+    }
+
+    100% {
+    left: 0%;
+    transform: rotate(0deg);
+    }
+}
+
+@keyframes rightroll {
+    0% {
+        right: -200%;
+        transform: rotate(7200deg);
+    }
+
+    50% {
+        right: -100%
+    }
+
+    100% {
+        right: 0%;
+        transform: rotate(0deg);
+    }
 }
