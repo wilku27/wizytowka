@@ -158,7 +158,6 @@ header h1 {
     color: black;
     transition: all 1s ease-in;
     text-align: center;
-    /* width: 100px; */
     transition-delay: 2s;
     overflow: hidden;
     display: none;
@@ -166,7 +165,7 @@ header h1 {
 
 .box:hover .overlay p {
     color: white;
-    width: 600px;
+    width: 500px;
     display: block;
 }
 
