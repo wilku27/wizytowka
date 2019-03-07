@@ -185,3 +185,11 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+footer i {
+    font-size: 20px;
+}
+
+footer p {
+    font-weight: bold;
+}

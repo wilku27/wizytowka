@@ -188,6 +188,14 @@ footer {
     align-items: center;
 }
 
+footer i {
+    font-size: 20px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
 @keyframes leftroll {
     0% {
     left: -200%;

@@ -200,7 +200,7 @@ header h1 {
 }
 
 .photo5 {
-    background-image: url(images/polotemp.jpg);
+    background-image: url(images/polo.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -213,4 +213,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer i {
+    font-size: 20px;
+}
+
+footer p {
+    font-weight: bold;
 }
